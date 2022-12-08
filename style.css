@@ -1,0 +1,133 @@
+*{text-transform: capitalize;}
+.title-page{
+    background-color: black;
+    color: white;
+    padding: 1%;}
+.title-page p{       
+    margin: 0;
+    margin-bottom: 1%; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    font-size: 18px;}
+.title-page p::after{
+    font-family: 'font awesome 5 free';
+    content: '\f061';
+    font-weight: 900;
+   position: relative;
+   margin-left: 20px;}
+.title-page p::before{
+    content: "";
+    border-bottom: #26CAD4 solid 1px;
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+    width: 100%;}
+nav{display: flex; justify-content: space-evenly;}
+ul{text-align: right;   
+     word-spacing: 20px;
+     width: 50%;
+     padding: 0;}
+li{list-style: none; display: inline-block;}
+li:last-child{
+    color: white;
+    background-color: black;
+    box-shadow:#26CAD4 5px 5px 0px ;
+    word-spacing: normal;
+    border-radius: 2px;
+    padding: 1% 1.5%;}
+body > h2{
+    text-align: center;
+    margin:  5% auto;
+    font-weight: bold;
+    font-size: 30px;}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    width: 80%;
+    margin: auto;}
+.cards .box{
+    
+    width: 80%;
+    border-radius: 15px;
+    margin: auto;
+    color: ##FEACDC;
+    background-color: black;}
+.cards .box h5{
+    color: #26CAD4;
+    font-size: 14px;
+    margin-left: 10%;}
+.cards .box > div{
+    background-color: white;
+    height: 73%;
+    color: black;
+    width: 98%;
+    margin:  auto ;
+    border-bottom-left-radius:inherit ;
+    border-bottom-right-radius:inherit;
+    position: relative;}
+.cards .box:nth-child(1){
+    height: 240px;
+    background-color: #100e0f;}
+.cards .box > div span{
+font-weight: bold;
+font-size: 40px;
+margin-left: 5%;}
+.cards .box div > span::before{
+    content: "$";
+    font-size:20px ;}
+.cards .box div p{
+    
+    margin-left: 5%;
+    font-size: 20px;}
+.cards .box:nth-child(2){
+    background-color: #0f0f0f;
+    height: 340px;}
+.cards .box:nth-child(2) div{
+    height: 80%;}
+.cards .box:nth-child(2) div::after{
+    content: "Save 32%";
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;    
+    bottom:-20%;}
+.cards .box div i{
+    position: absolute;
+    font-size: 30px;
+    right: 5%;
+    bottom: 15px;}
+.cards .box:nth-child(3){
+
+    height: 240px;
+    background-color: #050505;}
+footer p:first-child{
+    color: white;
+    background-color: black;
+    box-shadow:#26CAD4 5px 5px 0px ;
+    word-spacing: normal;
+    border-radius: 2px;
+    padding: 1% 1.5%;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2%;}
+footer p:last-child{
+   margin-top: 2%;
+    text-align: center;}
+footer p:last-child span{
+    position: relative;}
+footer p:last-child span::before{
+    font-family: 'font awesome 5 free';
+    content: "\f095";
+    font-weight: 900;
+    margin: auto 1%;}
+footer p:last-child span::after{
+    content: "";
+    position: absolute;
+    left: 22%;
+    bottom: 0;
+    border-bottom: #050505 solid 2px;
+    width: 79%;}
